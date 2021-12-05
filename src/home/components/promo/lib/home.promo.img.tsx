@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Img = styled.img(
   ({ theme }) => `
     width: 100%;
+    height: 860px;
     position: absolute;
     top: 0;
     left: 0;

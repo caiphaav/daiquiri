@@ -7,7 +7,7 @@ export const Promo = () => {
     palette: { white },
   } = Theme.useStyledTheme();
   return (
-    <SharedComponents.Column>
+    <SharedComponents.Column height={"860px"}>
       <PromoLib.Img src={"6.jpeg"} />
       <PromoLib.Wrapper>
         <PromoLib.Inner>
