@@ -10,23 +10,29 @@ export const Promo = () => {
     <SharedComponents.Column height={"860px"}>
       <PromoLib.Img src={"6.jpeg"} />
       <PromoLib.Wrapper>
-        <PromoLib.Inner>
-          <SharedComponents.Text color={white} text={"DAIQUIRI:"} type={"h1"} />
-          <SharedComponents.VerticalBox height={8} />
-          <SharedComponents.Text
-            color={white}
-            text={"ТВОЙ ПРОВОДНИК В МИР R2 ONLINE"}
-            type={"h1"}
-          />
-          <SharedComponents.VerticalBox height={48} />
-          <SharedComponents.Text
-            text={"Мир где каждый может стать героем"}
-            type={"xs"}
-            color={white}
-          />
-          <SharedComponents.VerticalBox height={48} />
-          <SharedComponents.Button title={"Подробнее"} />
-        </PromoLib.Inner>
+        <SharedComponents.Column justifyContent={"center"}>
+          <SharedComponents.ResponsiveWrapper>
+            <SharedComponents.Text
+              color={white}
+              text={"DAIQUIRI:"}
+              type={"h1"}
+            />
+            <SharedComponents.VerticalBox height={8} />
+            <SharedComponents.Text
+              color={white}
+              text={"ТВОЙ ПРОВОДНИК В МИР R2 ONLINE"}
+              type={"h1"}
+            />
+            <SharedComponents.VerticalBox height={48} />
+            <SharedComponents.Text
+              text={"Мир где каждый может стать героем"}
+              type={"xs"}
+              color={white}
+            />
+            <SharedComponents.VerticalBox height={48} />
+            <SharedComponents.Button title={"Подробнее"} />
+          </SharedComponents.ResponsiveWrapper>
+        </SharedComponents.Column>
       </PromoLib.Wrapper>
     </SharedComponents.Column>
   );

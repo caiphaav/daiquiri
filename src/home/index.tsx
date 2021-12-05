@@ -10,6 +10,7 @@ export const Home = () => {
     <SharedComponents.Screen>
       <Components.Promo />
       <Components.Carousel />
+      <Components.LatestNews />
     </SharedComponents.Screen>
   );
 };

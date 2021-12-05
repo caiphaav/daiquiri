@@ -14,31 +14,28 @@ export const Carousel = () => {
   } = Theme.useStyledTheme();
   return (
     <>
-      <SharedComponents.Column
-        height={"192px"}
-        justifyContent={"center"}
-        padding={"0 48px"}
-      >
+      <SharedComponents.ResponsiveWrapper>
+        <SharedComponents.VerticalBox height={48} />
         <SharedComponents.Text
           text={"Выбери свое перевоплощение:"}
           type={"h1"}
           color={white}
         />
-      </SharedComponents.Column>
+        <SharedComponents.VerticalBox height={48} />
+      </SharedComponents.ResponsiveWrapper>
       <AliceCarousel
         infinite
         autoPlay
         autoPlayInterval={3000}
         mouseTracking
         items={PATHS.map((src) => (
-          <Img src={src} onDragStart={onDragStart} />
+          <Img key={src} src={src} onDragStart={onDragStart} />
         ))}
         disableButtonsControls
         disableDotsControls
         disableSlideInfo
         responsive={{ 0: { items: 3 } }}
       />
-      <SharedComponents.VerticalBox height={192} />
     </>
   );
 };
