@@ -1,0 +1,1 @@
+export { useStyledTheme } from "./useStyledTheme";
