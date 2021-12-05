@@ -6,11 +6,13 @@ export const Wrapper = styled.div(
     height: 860px;    
     position: absolute;
     display: flex;
-    flex-direction: column;   
-    
+    flex-direction: column;    
    
   ${theme.breakpoints.down(theme.breakpoints.medium)} {
     height: 860px;
+  }   
+  ${theme.breakpoints.down(theme.breakpoints.pixel)} {
+    padding:24px
   }   
 `
 );

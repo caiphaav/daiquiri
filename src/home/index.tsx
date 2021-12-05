@@ -4,12 +4,12 @@ import * as Components from "./components";
 
 export const Home = () => {
   const {
-    palette: { pink },
+    palette: {},
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Screen>
       <Components.Promo />
-      <SharedComponents.Box background={pink} height={"256px"} />
+      <Components.Carousel />
     </SharedComponents.Screen>
   );
 };

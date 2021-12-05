@@ -9,6 +9,13 @@ export const Inner = styled.div(
    
   ${theme.breakpoints.down(theme.breakpoints.medium)} {
     width: 100%; 
-  }   
+  }    
+  
+  ${theme.breakpoints.down(theme.breakpoints.pixel)} {
+    .h1{
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }    
 `
 );

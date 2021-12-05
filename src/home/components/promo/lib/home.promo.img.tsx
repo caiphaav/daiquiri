@@ -14,17 +14,17 @@ export const Img = styled.img(
    
   ${theme.breakpoints.down(theme.breakpoints.medium)} {
     object-fit: cover;
-    object-position: 50% 50%;
-    max-width: none;
-    position: fixed;
-    top: 0px;
-    left: 0.09375px;
-    width: 100%;
+    object-position: 50% 50%; 
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 860px;
     overflow: hidden;
     pointer-events: none;
     margin-top: 79.2437px;
     transform: translate3d(0px, -79.2063px, 0px);
   }   
+   
+     
 `
 );
