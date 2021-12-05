@@ -4,10 +4,18 @@ export const Img = styled.img(
   ({ theme }) => `   
     width: 339px;
     height: 225px;
+    opacity: 0.5;
     transform: skew(-8deg);
+    transition: 0.3s ease-in;
     
     ${theme.breakpoints.down(theme.breakpoints.ipad)} {
         width: 100%;
+        margin-bottom: 16px;
     } 
+    
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
 `
 );

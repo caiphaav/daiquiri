@@ -8,7 +8,7 @@ export const NewsItem = () => {
   } = Theme.useStyledTheme();
   return (
     <NewsItemLib.Wrapper>
-      <NewsItemLib.Img src={"6.jpeg"} />
+      <NewsItemLib.Img src={"8.jpeg"} />
       <SharedComponents.HorizontalBox width={48} />
       <SharedComponents.Column width={"100%"}>
         <SharedComponents.VerticalBox height={8} />
@@ -22,7 +22,9 @@ export const NewsItem = () => {
             type={"h2"}
             color={white}
           />
+          <SharedComponents.HorizontalBox width={8} />
           <SharedComponents.Text
+            textAlign={"right"}
             text={"21 марта, 2021г."}
             type={"sm"}
             color={gray}

@@ -11,6 +11,9 @@ export const Home = () => {
       <Components.Promo />
       <Components.Carousel />
       <Components.LatestNews />
+      <Components.EpicQuests />
+      <SharedComponents.VerticalBox height={64} />
+      <SharedComponents.Footer />
     </SharedComponents.Screen>
   );
 };

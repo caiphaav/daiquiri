@@ -13,19 +13,21 @@ export const Text: FC<IText> = memo(
     margin,
     padding,
     text,
+    textAlign,
     ...rest
   }) => {
     return (
       <p
+        className={type}
         style={{
           color,
           margin,
           padding,
+          textAlign,
           whiteSpace: "pre-wrap",
           transition: "0.15s linear",
           ...rest,
         }}
-        className={type}
       >
         {text}
       </p>

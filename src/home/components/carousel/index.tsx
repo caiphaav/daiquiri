@@ -26,7 +26,7 @@ export const Carousel = () => {
       <AliceCarousel
         infinite
         autoPlay
-        autoPlayInterval={3000}
+        autoPlayInterval={2000}
         mouseTracking
         items={PATHS.map((src) => (
           <Img key={src} src={src} onDragStart={onDragStart} />
