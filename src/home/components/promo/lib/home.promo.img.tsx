@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const Img = styled.img(
   ({ theme }) => `
     width: 100%;
-    height: 860px;
+    height: 800px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 0;
-    opacity: 33%;
+    opacity: 50%;
    
   ${theme.breakpoints.down(theme.breakpoints.medium)} {
     object-fit: cover;
@@ -18,7 +18,7 @@ export const Img = styled.img(
     top: 0;
     left: 0;
     width: 100vw;
-    height: 860px;
+    height: 800px;
     overflow: hidden;
     pointer-events: none;
     margin-top: 79.2437px;

@@ -4,7 +4,7 @@ export const Inner = styled.div(
   ({ theme }) => `
   
   display: flex;
-  height: 790px;
+  height: 800px;
   flex-direction: column;
   justify-content: center; 
   width: fit-content;

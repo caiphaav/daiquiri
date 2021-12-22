@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   
   html {
     color: #545454;
-    font-size: 16px; 
+    font-size: 12px; 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   

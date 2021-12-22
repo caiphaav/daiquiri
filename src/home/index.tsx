@@ -8,6 +8,7 @@ export const Home = () => {
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Screen>
+      <SharedComponents.NavBar />
       <Components.Promo />
       <Components.Carousel />
       <Components.LatestNews />
