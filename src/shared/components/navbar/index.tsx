@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { useCallback, useEffect, useState } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { IconUser } from "./icons";
 import * as NavBarLib from "./lib";
 
@@ -15,7 +17,7 @@ const Wrapper = styled.div<IWrapper>`
   left: 0;
   top: 0;
   height: 64px;
-  z-index: 1000;
+  z-index: 10000;
   width: 100%;
   display: flex;
   align-items: center;
@@ -80,6 +82,8 @@ const ROUTES: Array<string> = [
 ];
 
 export const NavBar = () => {
+  const navigate = useNavigate();
+
   const [offsetY, setOffsetY] = useState(0);
 
   const onScroll = useCallback(
@@ -96,7 +100,9 @@ export const NavBar = () => {
       <Inner>
         <RoutesWrapper>
           {ROUTES.map((route) => (
-            <p key={route}>{route}</p>
+            <p key={route} onClick={() => navigate("/")}>
+              {route}
+            </p>
           ))}
         </RoutesWrapper>
         <IconWrapper>

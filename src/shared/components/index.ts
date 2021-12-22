@@ -7,3 +7,4 @@ export { ResponsiveWrapper } from "./responsive_wrapper";
 export { Footer } from "./footer";
 export { NavBar } from "./navbar";
 export { NewsItem } from "./news_item";
+export { Header } from "./header";

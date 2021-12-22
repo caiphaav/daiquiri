@@ -4,7 +4,7 @@ import { SharedComponents, Theme } from "@shared";
 
 export const Promo = () => {
   const {
-    palette: { white },
+    palette: { white, pink },
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Column height={"800px"}>
@@ -26,8 +26,8 @@ export const Promo = () => {
             <SharedComponents.VerticalBox height={48} />
             <SharedComponents.Text
               text={"Мир где каждый может стать героем"}
-              type={"xs"}
-              color={white}
+              type={"h2"}
+              color={pink}
             />
             <SharedComponents.VerticalBox height={48} />
             <SharedComponents.Button title={"Подробнее"} />

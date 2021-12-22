@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 import { SharedComponents, Theme } from "@shared";
 
 import * as EQLib from "./lib";
 
 export const EpicQuests = () => {
+  const navigate = useNavigate();
   const {
     palette: { white },
   } = Theme.useStyledTheme();
@@ -31,7 +34,10 @@ export const EpicQuests = () => {
           color={white}
         />
         <SharedComponents.VerticalBox height={32} />
-        <SharedComponents.Button title={"Подробнее"} />
+        <SharedComponents.Button
+          title={"Подробнее"}
+          onClick={() => navigate("/epic-quests")}
+        />
       </div>
     </EQLib.Wrapper>
   );

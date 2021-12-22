@@ -10,7 +10,7 @@ export const Img = styled.img(
     right: 0;
     bottom: 0;
     z-index: 0;
-    opacity: 50%;
+    opacity: 40%;
    
   ${theme.breakpoints.down(theme.breakpoints.medium)} {
     object-fit: cover;
