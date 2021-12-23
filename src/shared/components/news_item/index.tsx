@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import { SharedComponents, Theme, Types } from "@shared";
 
 import * as NewsItemLib from "./lib";
@@ -7,6 +9,7 @@ interface INewsItem {
 }
 
 export const NewsItem = ({ item }: INewsItem) => {
+  const navigate = useNavigate();
   const {
     palette: { white, gray },
   } = Theme.useStyledTheme();
@@ -41,6 +44,7 @@ export const NewsItem = ({ item }: INewsItem) => {
           title={"Подробнее"}
           paddingHorizontal={24}
           paddingVertical={8}
+          onClick={() => navigate(item.route)}
         />
       </SharedComponents.Column>
     </NewsItemLib.Wrapper>

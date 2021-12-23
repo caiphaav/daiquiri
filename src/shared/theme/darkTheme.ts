@@ -5,7 +5,7 @@ export const darkTheme: ITheme = {
     primary: "#080325",
     secondary: "rgba(8,3,37,.9)",
     white: "#ffffff",
-    gray: "#545454",
+    gray: "#bbb",
     pink: "#d92b4c",
   },
   breakpoints: {

@@ -7,12 +7,12 @@ interface IEpicQuestsItem {
 
 const EpicQuestsItem = ({ title, src }: IEpicQuestsItem) => {
   const {
-    palette: { white },
+    palette: { gray },
   } = Theme.useStyledTheme();
   return (
     <>
       <SharedComponents.VerticalBox height={32} />
-      <SharedComponents.Text text={title} type={"md"} color={white} />
+      <SharedComponents.Text text={title} type={"md"} color={gray} />
       <SharedComponents.VerticalBox height={16} />
       <img src={src} />
     </>
@@ -128,7 +128,7 @@ const QUESTS: Array<IEpicQuestsItem> = [
 
 export const EpicQuests = () => {
   const {
-    palette: { pink },
+    palette: { white },
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Screen>
@@ -139,9 +139,18 @@ export const EpicQuests = () => {
       />
       <SharedComponents.Column padding={"64px 32px"}>
         <SharedComponents.Text
-          text={"ВНИМАНИЕ: увеличен опыт для персонажей 90+ уровня"}
-          type={"sm"}
-          color={pink}
+          text={"Награда за эпические квесты"}
+          type={"h1"}
+          color={white}
+          textAlign={"center"}
+        />
+        <SharedComponents.VerticalBox height={16} />
+        <SharedComponents.Text
+          text={
+            "Внимание: после достижения 90-ого уровня количество получаемого опыта значительно увеличено"
+          }
+          type={"md"}
+          color={white}
         />
         {QUESTS.map(({ src, title }) => (
           <EpicQuestsItem title={title} src={src} key={title} />

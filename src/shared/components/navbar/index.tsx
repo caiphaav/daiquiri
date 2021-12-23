@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { IconUser } from "./icons";
+import { IconUser, IconMenu } from "./icons";
 import * as NavBarLib from "./lib";
 
 interface IWrapper {
@@ -25,7 +25,9 @@ const Wrapper = styled.div<IWrapper>`
   background: ${({ theme }) => theme.palette.secondary};
 `;
 
-const IconWrapper = styled.div`
+const IconWrapper = styled.div(
+  ({ theme }) => `
+
   position: relative;
   height: 100%;
   display: flex;
@@ -44,7 +46,12 @@ const IconWrapper = styled.div`
       opacity: 1;
     }
   }
-`;
+   
+  ${theme.breakpoints.down(theme.breakpoints.ipad)} {
+    display: none;
+  }     
+`
+);
 
 const Inner = styled.div`
   width: 100%;
@@ -67,12 +74,45 @@ const Inner = styled.div`
   }
 `;
 
-const RoutesWrapper = styled.div`
+const RoutesWrapper = styled.div(
+  ({ theme }) => `
+
+  
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-grow: 1;
-`;
+   
+  ${theme.breakpoints.down(theme.breakpoints.ipad)} {
+    display: none;
+  }     
+`
+);
+
+const MenuWrapper = styled.div(
+  ({ theme }) => `
+
+  
+  display: none;
+   
+  ${theme.breakpoints.down(theme.breakpoints.ipad)} { 
+    position: absolute;
+    right: 32px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 48px;
+    height: 48px; 
+    border-radius: 8px;
+    transition: .2s linear;
+    
+    &:hover {
+      cursor: pointer; 
+      border: 1px solid white;
+    }
+  }     
+`
+);
 
 const ROUTES: Array<string> = [
   "Главная",
@@ -109,6 +149,9 @@ export const NavBar = () => {
           <NavBarLib.LoginForm scrollOffset={offsetY} />
           <IconUser fill={"white"} />
         </IconWrapper>
+        <MenuWrapper>
+          <IconMenu fill={"white"} width={24} height={24} />
+        </MenuWrapper>
       </Inner>
     </Wrapper>
   );

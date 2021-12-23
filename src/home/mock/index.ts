@@ -3,6 +3,7 @@ import { Types } from "@shared";
 export const LAST_NEWS: Array<Types.INews> = [
   {
     id: "3",
+    route: "/sealed-cave",
     title: "Боссы в запечатанных пещерах",
     date: "4 декабря 2021",
     description:
@@ -12,6 +13,7 @@ export const LAST_NEWS: Array<Types.INews> = [
   },
   {
     id: "1",
+    route: "",
     title: "Патч 03.12.2021",
     date: "3 декабря 2021",
     description:
@@ -22,6 +24,7 @@ export const LAST_NEWS: Array<Types.INews> = [
   },
   {
     id: "2",
+    route: "",
     title: "Ивент Время Апокалипсиса",
     date: "30 ноября 2021",
     description:
