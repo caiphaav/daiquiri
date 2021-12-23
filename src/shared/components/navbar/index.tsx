@@ -39,7 +39,7 @@ const IconWrapper = styled.div(
     }
   }
 
-  ${theme.breakpoints.down(theme.breakpoints.ipad)} {
+  ${theme.breakpoints.down(theme.breakpoints.ipadPro)} {
     display: none;
   }
 `
@@ -74,7 +74,7 @@ const RoutesWrapper = styled.div(
   justify-content: flex-start;
   flex-grow: 1;
    
-  ${theme.breakpoints.down(theme.breakpoints.ipad)} {
+  ${theme.breakpoints.down(theme.breakpoints.ipadPro)} {
     display: none;
   }     
 `
@@ -86,7 +86,7 @@ const MenuWrapper = styled.div(
   
   display: none;
    
-  ${theme.breakpoints.down(theme.breakpoints.ipad)} { 
+  ${theme.breakpoints.down(theme.breakpoints.ipadPro)} { 
     position: absolute;
     right: 32px;
     display: flex; 
@@ -105,29 +105,38 @@ const MenuWrapper = styled.div(
 `
 );
 
-const ROUTES: Array<string> = [
-  "Главная",
-  "Новости",
-  "О сервере",
-  "Скачать",
-  "Регистрация",
-];
-
 export const NavBar = () => {
   const navigate = useNavigate();
   return (
     <Wrapper>
       <Inner>
         <RoutesWrapper>
-          {ROUTES.map((route) => (
-            <p key={route} onClick={() => navigate("/")}>
-              {route}
-            </p>
-          ))}
+          <p onClick={() => navigate("/")}>Главная</p>
+          <p onClick={() => navigate("/about")}>О сервере</p>
+          <p onClick={() => navigate("/")}>Скачать</p>
         </RoutesWrapper>
         <IconWrapper>
-          <p onClick={() => navigate("/")}>Пополнить</p>
-          <p onClick={() => navigate("/")}>Вход</p>
+          <a
+            href={"https://daiquiri.nonrp.nl/lk/donate.php"}
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            <p>Пополнить</p>
+          </a>
+          <a
+            href={"https://daiquiri.nonrp.nl/lk/register.php"}
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            <p>Регистрация</p>
+          </a>
+          <a
+            href={"https://daiquiri.nonrp.nl/lk/login.php"}
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            <p>Вход</p>
+          </a>
         </IconWrapper>
         <MenuWrapper>
           <IconMenu fill={"white"} width={24} height={24} />

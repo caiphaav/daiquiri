@@ -27,7 +27,8 @@ export const GlobalStyle = createGlobalStyle`
   
   a {
     color: ${({ theme }: { theme: ITheme }) => theme.palette.pink};
-    font-size: 1.4rem;
+    font-size: 1.25rem;
+    text-decoration: none;
   }
 
   body {

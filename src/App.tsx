@@ -10,6 +10,7 @@ import { PATCH_03_12_2021 } from "./patch_03_12_2021";
 import { PATCH_22_12_2021 } from "./patch_22_12_2021";
 import { TimeOfApocalypses } from "./time_of_apocalypses";
 import { NewYear } from "./new_year";
+import { About } from "./about";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <SharedComponents.ScrollToTop />
         <Routes>
           <Route path={"/"} element={<Home />} />
+          <Route path={"/about"} element={<About />} />
           <Route path={"events/epic-quests"} element={<EpicQuests />} />
           <Route path={"events/sealed-cave"} element={<SealedCave />} />
           <Route
