@@ -6,7 +6,7 @@ export const Img = styled.img`
   left: 0;
   right: 0;
   bottom: 0;
-  height: 300px;
+  height: 100%;
   width: 100%;
   opacity: 0.4;
   box-fit: cover;

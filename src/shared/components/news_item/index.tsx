@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { SharedComponents, Theme, Types } from "@shared";
 
 import * as NewsItemLib from "./lib";
+import { useCallback } from "react";
 
 interface INewsItem {
   item: Types.INews;
@@ -13,9 +14,12 @@ export const NewsItem = ({ item }: INewsItem) => {
   const {
     palette: { white, gray },
   } = Theme.useStyledTheme();
+
+  const onNavigate = useCallback(() => navigate(item.route), [item]);
+
   return (
     <NewsItemLib.Wrapper>
-      <NewsItemLib.Img src={item.thumbnail} />
+      <NewsItemLib.Img src={item.thumbnail} onClick={onNavigate} />
       <SharedComponents.HorizontalBox width={48} />
       <SharedComponents.Column width={"100%"}>
         <SharedComponents.VerticalBox height={8} />
@@ -44,7 +48,7 @@ export const NewsItem = ({ item }: INewsItem) => {
           title={"Подробнее"}
           paddingHorizontal={24}
           paddingVertical={8}
-          onClick={() => navigate(item.route)}
+          onClick={onNavigate}
         />
       </SharedComponents.Column>
     </NewsItemLib.Wrapper>

@@ -4,7 +4,7 @@ import { SharedComponents, Theme } from "@shared";
 
 export const Promo = () => {
   const {
-    palette: { white, pink },
+    palette: { white },
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Column height={"800px"}>
@@ -15,19 +15,19 @@ export const Promo = () => {
             <SharedComponents.Text
               color={white}
               text={"DAIQUIRI:"}
-              type={"h1"}
+              type={"h1Glow"}
             />
             <SharedComponents.VerticalBox height={8} />
             <SharedComponents.Text
               color={white}
               text={"ТВОЙ ПРОВОДНИК В МИР R2 ONLINE"}
-              type={"h1"}
+              type={"h1Glow"}
             />
             <SharedComponents.VerticalBox height={48} />
             <SharedComponents.Text
               text={"Мир где каждый может стать героем"}
-              type={"h2"}
-              color={pink}
+              type={"h2ItalicGlow"}
+              color={white}
             />
             <SharedComponents.VerticalBox height={48} />
             <SharedComponents.Button title={"Подробнее"} />

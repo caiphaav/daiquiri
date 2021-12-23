@@ -2,8 +2,18 @@ import { Types } from "@shared";
 
 export const LAST_NEWS: Array<Types.INews> = [
   {
-    id: "3",
-    route: "/sealed-cave",
+    id: "0",
+    route: "events/patch-22-12-2021",
+    title: "Патч 22.12.2021",
+    date: "22 декабря 2021",
+    description:
+      'На сервер установлено игровое событие: "Новогоднее безумие" .Добавлены новые игровые предметы: В игру добавлен 4 грейд бижутерии солнца. В игру добавлен 2 грейд Кольца Ифрита...',
+    thumbnail:
+      "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
+  },
+  {
+    id: "1",
+    route: "/events/sealed-cave",
     title: "Боссы в запечатанных пещерах",
     date: "4 декабря 2021",
     description:
@@ -12,8 +22,8 @@ export const LAST_NEWS: Array<Types.INews> = [
       "https://sun9-78.userapi.com/sun9-51/impg/tADxoH4UN3XgbMj-7CoemKx4VIafRFtrAU0gaA/BliS0ENGst0.jpg?size=758x542&quality=96&sign=eccc51078597b0bdd261cb553fca07c2&type=album",
   },
   {
-    id: "1",
-    route: "",
+    id: "2",
+    route: "events/patch-03-12-2021",
     title: "Патч 03.12.2021",
     date: "3 декабря 2021",
     description:
@@ -23,9 +33,9 @@ export const LAST_NEWS: Array<Types.INews> = [
       "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
   },
   {
-    id: "2",
-    route: "",
-    title: "Ивент Время Апокалипсиса",
+    id: "3",
+    route: "events/time-of-apocalypses",
+    title: "Ивент «Время Апокалипсиса»",
     date: "30 ноября 2021",
     description:
       "Новые уникальные перевоплощения и разнообразие игрового времени ждёт тебя!",

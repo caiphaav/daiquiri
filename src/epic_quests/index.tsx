@@ -14,7 +14,7 @@ const EpicQuestsItem = ({ title, src }: IEpicQuestsItem) => {
       <SharedComponents.VerticalBox height={32} />
       <SharedComponents.Text text={title} type={"md"} color={gray} />
       <SharedComponents.VerticalBox height={16} />
-      <img src={src} />
+      <img src={src} alt={title} />
     </>
   );
 };

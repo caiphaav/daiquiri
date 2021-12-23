@@ -6,7 +6,15 @@ export interface IPalette {
   pink: string;
 }
 
-export type TypographyType = "h1" | "h2" | "lg" | "md" | "sm" | "xs";
+export type TypographyType =
+  | "h1"
+  | "h1Glow"
+  | "h2"
+  | "h2ItalicGlow"
+  | "lg"
+  | "md"
+  | "sm"
+  | "xs";
 
 export interface ITheme {
   palette: IPalette;

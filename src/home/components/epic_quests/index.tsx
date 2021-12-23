@@ -36,7 +36,7 @@ export const EpicQuests = () => {
         <SharedComponents.VerticalBox height={32} />
         <SharedComponents.Button
           title={"Подробнее"}
-          onClick={() => navigate("/epic-quests", { replace: true })}
+          onClick={() => navigate("/events/epic-quests", { replace: true })}
         />
       </div>
     </EQLib.Wrapper>

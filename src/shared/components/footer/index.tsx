@@ -11,7 +11,9 @@ export const Footer = () => {
   } = useStyledTheme();
   return (
     <FooterLib.Wrapper>
-      <FooterLib.Img src={"about.webp"} />
+      <FooterLib.Img
+        src={"http://gamehag.com/img/games/background/r2-online.jpg"}
+      />
       <Column alignItems={"center"} justifyContent={"center"}>
         <Text type={"h2"} text={"Будь с нами на связи!"} color={white} />
         <VerticalBox height={24} />

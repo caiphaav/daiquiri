@@ -23,6 +23,11 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+  
+  a {
+    color: ${({ theme }: { theme: ITheme }) => theme.palette.pink};
+    font-size: 1.4rem;
+  }
 
   body {
     background: ${({ theme }: { theme: ITheme }) => theme.palette.white};

@@ -1,19 +1,11 @@
 import styled from "styled-components";
-import { useCallback, useEffect, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { IconUser, IconMenu } from "./icons";
-import * as NavBarLib from "./lib";
+import { IconMenu } from "./icons";
 
-interface IWrapper {
-  scrollOffset: number;
-}
-
-const Wrapper = styled.div<IWrapper>`
-  transform: ${({ scrollOffset }) => `translate3d( 0, ${scrollOffset}px, 0)`};
-  transition: 0.15s linear;
-  position: absolute;
+const Wrapper = styled.div`
+  position: fixed;
   left: 0;
   top: 0;
   height: 64px;
@@ -25,33 +17,33 @@ const Wrapper = styled.div<IWrapper>`
   background: ${({ theme }) => theme.palette.secondary};
 `;
 
-const IconWrapper = styled.div(
-  ({ theme }) => `
-
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 64px;
-  cursor: pointer;
-  .form {
-    visibility: hidden;
-  }
-
-  &:hover {
-    .form {
-      padding: 16px;
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-   
-  ${theme.breakpoints.down(theme.breakpoints.ipad)} {
-    display: none;
-  }     
-`
-);
+// const IconWrapper = styled.div(
+//   ({ theme }) => `
+//
+//   position: relative;
+//   height: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+//   width: 64px;
+//   cursor: pointer;
+//   .form {
+//     visibility: hidden;
+//   }
+//
+//   &:hover {
+//     .form {
+//       padding: 16px;
+//       visibility: visible;
+//       opacity: 1;
+//     }
+//   }
+//
+//   ${theme.breakpoints.down(theme.breakpoints.ipad)} {
+//     display: none;
+//   }
+// `
+// );
 
 const Inner = styled.div`
   width: 100%;
@@ -123,20 +115,8 @@ const ROUTES: Array<string> = [
 
 export const NavBar = () => {
   const navigate = useNavigate();
-
-  const [offsetY, setOffsetY] = useState(0);
-
-  const onScroll = useCallback(
-    () => setOffsetY(window.scrollY),
-    [window.scrollY, setOffsetY]
-  );
-
-  useEffect(() => {
-    document.addEventListener("scroll", onScroll);
-    return () => document.addEventListener("scroll", onScroll);
-  }, [onScroll]);
   return (
-    <Wrapper scrollOffset={offsetY}>
+    <Wrapper>
       <Inner>
         <RoutesWrapper>
           {ROUTES.map((route) => (
@@ -145,10 +125,10 @@ export const NavBar = () => {
             </p>
           ))}
         </RoutesWrapper>
-        <IconWrapper>
-          <NavBarLib.LoginForm scrollOffset={offsetY} />
-          <IconUser fill={"white"} />
-        </IconWrapper>
+        {/*<IconWrapper>*/}
+        {/*  <NavBarLib.LoginForm } />*/}
+        {/*  <IconUser fill={"white"} />*/}
+        {/*</IconWrapper>*/}
         <MenuWrapper>
           <IconMenu fill={"white"} width={24} height={24} />
         </MenuWrapper>
