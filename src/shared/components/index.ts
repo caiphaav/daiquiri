@@ -9,3 +9,5 @@ export { NavBar } from "./navbar";
 export { NewsItem } from "./news_item";
 export { Header } from "./header";
 export { ScrollToTop } from "./scroll_to_top";
+export { R2Item } from "./r2_item";
+export { Accordion } from "./accordion";

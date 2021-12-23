@@ -8,3 +8,8 @@ export interface INews {
   thumbnail: string;
   route: string;
 }
+
+export interface IR2Item {
+  src: string;
+  title: string;
+}

@@ -45,6 +45,15 @@ const SealedCaveBoss = ({ name, description, src }: ISealedCaveBoss) => {
       <SharedComponents.Text text={description} type={"sm"} color={white} />
       <SharedComponents.VerticalBox height={16} />
       <img width={"60%"} src={src} />
+      <SharedComponents.VerticalBox height={16} />
+      <SharedComponents.Accordion
+        data={[
+          {
+            title: "Mаг кровь",
+            src: "https://sun9-78.userapi.com/sun9-6/impg/OmejxKHcRmEpxmLvHF08ZbIN8MkgDQvi_2kPGw/wF7B5aNKXLI.jpg?size=807x454&quality=96&sign=5240b84a69de4946cee04789f5d1d4a2&type=album",
+          },
+        ]}
+      />
     </>
   );
 };
@@ -84,7 +93,12 @@ export const SealedCave = () => {
           width={"100%"}
         />
         {BOSSES_INFO.map(({ description, name, src }) => (
-          <SealedCaveBoss name={name} description={description} src={src} />
+          <SealedCaveBoss
+            key={name}
+            name={name}
+            description={description}
+            src={src}
+          />
         ))}
       </SharedComponents.Column>
       <SharedComponents.Footer />
