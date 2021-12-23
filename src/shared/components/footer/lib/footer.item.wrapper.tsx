@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ItemWrapper = styled.div`
   width: 100px;
   height: 100px;
-  background: #747377;
+  background: #d92b4c;
   transform: skew(-8deg);
   display: flex;
   align-items: center;

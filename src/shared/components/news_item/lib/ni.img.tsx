@@ -9,6 +9,11 @@ export const Img = styled.img(
     transition: 0.3s ease-in;
     
     ${theme.breakpoints.down(theme.breakpoints.ipad)} {
+        width: 75%;
+        margin-bottom: 16px;
+    } 
+    
+    ${theme.breakpoints.down(theme.breakpoints.pixel)} {
         width: 100%;
         margin-bottom: 16px;
     } 
