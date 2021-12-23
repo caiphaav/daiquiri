@@ -12,6 +12,7 @@ export const Box = styled.div<IBox>`
   padding: ${({ padding }) => `${padding}`};
   overflow: ${({ overflow = "none" }) => `${overflow}`};
   border-radius: ${({ borderRadius = "none" }) => borderRadius};
+  min-height: ${({ minHeight }) => minHeight};
 `;
 
 export const Row = styled.div<IFlexBox>`
@@ -28,6 +29,7 @@ export const Row = styled.div<IFlexBox>`
   justify-content: ${({ justifyContent = "flex-start" }) =>
     `${justifyContent}`};
   overflow: ${({ overflow = "none" }) => `${overflow}`};
+  min-height: ${({ minHeight }) => minHeight};
 `;
 
 export const Column = styled.div<IFlexBox>`
@@ -45,6 +47,7 @@ export const Column = styled.div<IFlexBox>`
   justify-content: ${({ justifyContent = "flex-start" }) =>
     `${justifyContent}`};
   overflow: ${({ overflow = "none" }) => `${overflow}`};
+  min-height: ${({ minHeight }) => minHeight};
 `;
 
 export const HorizontalBox = styled.div<IHorizontalBox>`

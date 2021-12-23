@@ -14,6 +14,7 @@ export interface IBox {
   padding?: number | string;
   border?: string;
   overflow?: IOverflow;
+  minHeight?: number | string;
   borderRadius?: string | number;
 }
 

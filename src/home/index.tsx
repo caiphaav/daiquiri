@@ -11,8 +11,7 @@ export const Home = () => {
       <SharedComponents.NavBar />
       <Components.Promo />
       <Components.Carousel />
-      <SharedComponents.VerticalBox height={64} />
-      <Components.EpicQuests />
+      <Components.NewYearPromo />
       <Components.LatestNews />
       <Components.EpicQuests />
       <SharedComponents.VerticalBox height={64} />

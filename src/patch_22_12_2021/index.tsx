@@ -15,7 +15,7 @@ export const PATCH_22_12_2021 = () => {
         }
         title={"Патч 22.12.2021"}
       />
-      <SharedComponents.Column padding={"64px 32px"}>
+      <SharedComponents.Column padding={"64px 32px"} minHeight={"960px"}>
         <SharedComponents.Text
           text={"Патч 22.12.2021"}
           type={"h1"}

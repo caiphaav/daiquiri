@@ -9,6 +9,7 @@ import { SealedCave } from "./sealed_cave";
 import { PATCH_03_12_2021 } from "./patch_03_12_2021";
 import { PATCH_22_12_2021 } from "./patch_22_12_2021";
 import { TimeOfApocalypses } from "./time_of_apocalypses";
+import { NewYear } from "./new_year";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             path={"events/time-of-apocalypses"}
             element={<TimeOfApocalypses />}
           />
+          <Route path={"events/new-year"} element={<NewYear />} />
         </Routes>
       </Router>
     </ThemeProvider>

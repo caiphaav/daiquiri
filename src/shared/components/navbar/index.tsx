@@ -17,33 +17,33 @@ const Wrapper = styled.div`
   background: #09090b;
 `;
 
-// const IconWrapper = styled.div(
-//   ({ theme }) => `
-//
-//   position: relative;
-//   height: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-end;
-//   width: 64px;
-//   cursor: pointer;
-//   .form {
-//     visibility: hidden;
-//   }
-//
-//   &:hover {
-//     .form {
-//       padding: 16px;
-//       visibility: visible;
-//       opacity: 1;
-//     }
-//   }
-//
-//   ${theme.breakpoints.down(theme.breakpoints.ipad)} {
-//     display: none;
-//   }
-// `
-// );
+const IconWrapper = styled.div(
+  ({ theme }) => `
+
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 64px;
+  cursor: pointer;
+  .form {
+    visibility: hidden;
+  }
+
+  &:hover {
+    .form {
+      padding: 16px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  ${theme.breakpoints.down(theme.breakpoints.ipad)} {
+    display: none;
+  }
+`
+);
 
 const Inner = styled.div`
   width: 100%;
@@ -125,10 +125,10 @@ export const NavBar = () => {
             </p>
           ))}
         </RoutesWrapper>
-        {/*<IconWrapper>*/}
-        {/*  <NavBarLib.LoginForm } />*/}
-        {/*  <IconUser fill={"white"} />*/}
-        {/*</IconWrapper>*/}
+        <IconWrapper>
+          <p onClick={() => navigate("/")}>Пополнить</p>
+          <p onClick={() => navigate("/")}>Вход</p>
+        </IconWrapper>
         <MenuWrapper>
           <IconMenu fill={"white"} width={24} height={24} />
         </MenuWrapper>
