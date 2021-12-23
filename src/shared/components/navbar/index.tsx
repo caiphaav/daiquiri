@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${({ theme }) => theme.palette.secondary};
+  background: #09090b;
 `;
 
 // const IconWrapper = styled.div(
@@ -49,7 +49,6 @@ const Inner = styled.div`
   width: 100%;
   max-width: 1400px;
   height: 100%;
-  background: black;
   padding: 0 96px;
   display: flex;
   align-items: center;
@@ -110,7 +109,8 @@ const ROUTES: Array<string> = [
   "Главная",
   "Новости",
   "О сервере",
-  "Игровой магазин",
+  "Скачать",
+  "Регистрация",
 ];
 
 export const NavBar = () => {

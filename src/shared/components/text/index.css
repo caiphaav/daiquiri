@@ -16,20 +16,12 @@
 @keyframes glow {
     to {
         text-shadow:
-                0 0 2px #fff,
-                0 0 2px #fff,
-                0 0 1px #fff;
+                0 0 2px #e8e8e8,
+                0 0 2px #e8e8e8,
+                0 0 1px #e8e8e8;
     }
 }
 
-.h1Glow {
-    font-size: 2.5rem;
-    font-weight: 500;
-    font-family: 'Gotham Pro', sans-serif;
-    word-wrap: break-word;
-    margin: 0;
-    animation: glow 4s infinite alternate;
-}
 
 .h2ItalicGlow {
     font-size: 1.75rem;

@@ -8,7 +8,6 @@ export interface IPalette {
 
 export type TypographyType =
   | "h1"
-  | "h1Glow"
   | "h2"
   | "h2ItalicGlow"
   | "lg"

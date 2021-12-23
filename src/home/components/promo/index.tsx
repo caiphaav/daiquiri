@@ -15,17 +15,17 @@ export const Promo = () => {
             <SharedComponents.Text
               color={white}
               text={"DAIQUIRI:"}
-              type={"h1Glow"}
+              type={"h1"}
             />
             <SharedComponents.VerticalBox height={8} />
             <SharedComponents.Text
               color={white}
               text={"ТВОЙ ПРОВОДНИК В МИР R2 ONLINE"}
-              type={"h1Glow"}
+              type={"h1"}
             />
             <SharedComponents.VerticalBox height={48} />
             <SharedComponents.Text
-              text={"Мир где каждый может стать героем"}
+              text={"‟Мир, где каждый может стать героем”"}
               type={"h2ItalicGlow"}
               color={white}
             />

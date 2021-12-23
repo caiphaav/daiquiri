@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     color: #545454;
     font-size: 12px; 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #09090b;
   }
   
   p {

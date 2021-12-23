@@ -2,10 +2,10 @@ import { ITheme } from "./types";
 
 export const darkTheme: ITheme = {
   palette: {
-    primary: "#080325",
-    secondary: "rgba(8,3,37,.9)",
-    white: "#ffffff",
-    gray: "#bbb",
+    primary: "#17161c",
+    secondary: "#100f14",
+    white: "#e8e8e8",
+    gray: "#a2a2a4",
     pink: "#d92b4c",
   },
   breakpoints: {
