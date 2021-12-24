@@ -46,18 +46,22 @@ export const PATCH_24_12_2021 = () => {
           color={gray}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={80}
+          desktopWidth={30}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-63/impg/RuppEybAIyol3EaoXcn0sg0MHZsIEhnKMPeCPw/rrl04oKGEug.jpg?size=310x207&quality=96&sign=0a714ab0593d35d1f866da6ab3a475d9&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={80}
+          desktopWidth={30}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-75/impg/X3b6Cld6JKXqRvowPZJowkvsTrOXmEUBRu1gkA/J0z_roPf6f8.jpg?size=648x738&quality=96&sign=ea93e17671a6b7fe59999b8fc237d219&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
         <SharedComponents.Text
@@ -81,11 +85,13 @@ export const PATCH_24_12_2021 = () => {
           color={gray}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={80}
+          desktopWidth={30}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-6/impg/QcWeQtvGGMW5HEGo4mtN0XF2c36KZxQU95s-1g/a2-drYc4V6g.jpg?size=520x490&quality=96&sign=48670c2e10c43139b3efb05320334046&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
         <SharedComponents.Text
@@ -96,11 +102,13 @@ export const PATCH_24_12_2021 = () => {
           color={gray}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={80}
+          desktopWidth={30}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-82/impg/pHmbOAoq3mYmlIZvY-Zr4y-IOuwI1KHAWat2FA/HkyTV_MvIcs.jpg?size=481x587&quality=96&sign=e44802c676a5b266a445f6410b2c7dc6&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
         <SharedComponents.Text
@@ -111,11 +119,13 @@ export const PATCH_24_12_2021 = () => {
           color={gray}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={80}
+          desktopWidth={30}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-14/impg/HR87TMuJmnlTkBCXwwZaTiWXYPSIJbfRk0W8JA/Hck9YPOqIlA.jpg?size=965x581&quality=96&sign=40ab2161b3b62943803ec88b177023a2&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
         <SharedComponents.Text
@@ -137,11 +147,14 @@ export const PATCH_24_12_2021 = () => {
           text={"Исправлены руны в ожерелья."}
           color={white}
         />
-        <img
+        <SharedComponents.VerticalBox height={24} />
+        <SharedComponents.ResponsiveImg
+          mobileWidth={40}
+          desktopWidth={15}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-80/impg/gk6gIjpJmJHH6DPUdC3B0T1pAriZwjjpddu44g/hAMwvLxAfhg.jpg?size=151x51&quality=96&sign=d8bccbee42b3f8ce2c7465bb8a9c0241&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
         <SharedComponents.Text
@@ -160,11 +173,13 @@ export const PATCH_24_12_2021 = () => {
           color={white}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={40}
+          desktopWidth={15}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-82/impg/LEgUGSLSUDhg_4JYuSQeHoHDMJOKtpSn-CtsrA/zSsaJKcxpzU.jpg?size=205x50&quality=96&sign=cefe6e829c0ceb4440061770f39f6b97&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
         <SharedComponents.Text
@@ -206,11 +221,13 @@ export const PATCH_24_12_2021 = () => {
           color={gray}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={80}
+          desktopWidth={30}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-33/impg/VVog6ROTyhGmHnRL8j2Q4n0eN_QdxOFb1_NpJg/vuyrjzVXwV4.jpg?size=338x208&quality=96&sign=6e91b7c5845bdb43b97bf09aab534d2f&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
         <SharedComponents.Text
@@ -236,7 +253,6 @@ export const PATCH_24_12_2021 = () => {
           color={gray}
         />
         <SharedComponents.VerticalBox height={24} />
-
         <SharedComponents.Text
           type={"lg"}
           text={"Корректировки усиления Меча Ифрита"}
@@ -251,7 +267,6 @@ export const PATCH_24_12_2021 = () => {
           color={gray}
         />
         <SharedComponents.VerticalBox height={24} />
-
         <SharedComponents.Text
           type={"lg"}
           text={
@@ -268,7 +283,6 @@ export const PATCH_24_12_2021 = () => {
           color={gray}
         />
         <SharedComponents.VerticalBox height={24} />
-
         <SharedComponents.Text
           type={"lg"}
           text={"Исправление NPC Битвы Гильдий"}
@@ -283,7 +297,6 @@ export const PATCH_24_12_2021 = () => {
           color={gray}
         />
         <SharedComponents.VerticalBox height={24} />
-
         <SharedComponents.Text
           type={"lg"}
           text={"Изменение LvL-up опыта после 100-го уровня"}

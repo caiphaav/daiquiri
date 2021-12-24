@@ -15,17 +15,12 @@ export const About = () => {
         title={"Daiquiri - О сервере"}
       />
       <SharedComponents.NavBar />
-      <img
+      <AboutComponents.Cover
         src={
           "https://c.wallhere.com/photos/ba/f0/2560x1600_px_fantasy_Art_Heroes_video_games_warcraft-665230.jpg!d"
         }
         alt={"about"}
         width={"100%"}
-        style={{
-          objectFit: "cover",
-          minHeight: "100vh",
-          opacity: 0.5,
-        }}
       />
       <AboutComponents.ResponsiveWrapper>
         <AboutComponents.ResponsiveInner>

@@ -35,11 +35,11 @@ export const SealedCave = () => {
           color={white}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          alt={""}
           src={
             "https://sun9-78.userapi.com/sun9-51/impg/tADxoH4UN3XgbMj-7CoemKx4VIafRFtrAU0gaA/BliS0ENGst0.jpg?size=758x542&quality=96&sign=eccc51078597b0bdd261cb553fca07c2&type=album"
           }
-          width={"100%"}
         />
         {BOSSES_INFO.map(({ description, name, src, data }) => (
           <Components.Boss

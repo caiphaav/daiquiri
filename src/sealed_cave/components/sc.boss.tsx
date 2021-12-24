@@ -16,7 +16,13 @@ export const Boss = ({
       <SharedComponents.VerticalBox height={16} />
       <SharedComponents.Text text={description} type={"sm"} color={white} />
       <SharedComponents.VerticalBox height={16} />
-      <img alt={name} width={"60%"} src={src} />
+      <SharedComponents.ResponsiveImg
+        mobileWidth={100}
+        desktopWidth={40}
+        alt={name}
+        width={"60%"}
+        src={src}
+      />
       <SharedComponents.VerticalBox height={16} />
       <SharedComponents.Accordion data={data} />
     </>

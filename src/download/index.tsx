@@ -31,11 +31,16 @@ export const Download = () => {
             "https://drive.google.com/file/d/1nkIBo1bGzugqjPjiRhtm80W0xX8vWibn/view?usp=sharing"
           }
           target={"_blank"}
+          rel={"noreferrer"}
         >
           <SharedComponents.Button title={"GOOGLE DRIVE"} />
         </a>
         <SharedComponents.VerticalBox height={24} />
-        <a href={"https://disk.yandex.ru/d/eRjzHS_3z-qacA"} target={"_blank"}>
+        <a
+          href={"https://disk.yandex.ru/d/eRjzHS_3z-qacA"}
+          target={"_blank"}
+          rel={"noreferrer"}
+        >
           <SharedComponents.Button title={"YANDEX DISK"} />
         </a>
       </DownloadComponents.ResponsiveInner>

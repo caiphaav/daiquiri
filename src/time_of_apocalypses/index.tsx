@@ -15,7 +15,7 @@ export const TimeOfApocalypses = () => {
       <SharedComponents.NavBar />
       <SharedComponents.Header
         thumbnail={
-          "https://sun9-78.userapi.com/sun9-28/impg/AnWVKXfBEMzKrt_An5HjX7XLl6cbq0IDzJ7HZA/5q5C2bjat0I.jpg?size=483x360&quality=96&sign=3e27e4b3527e18f345108dca4ef96617&type=album"
+          "https://media.discordapp.net/attachments/898707711846387712/923584536980357250/a363e7fdb2318c53.png"
         }
         title={"Ивент «Время Апокалипсиса»"}
       />
@@ -42,7 +42,10 @@ export const TimeOfApocalypses = () => {
           color={white}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={12}
+          desktopWidth={4}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-6/impg/BKawrki2--pP4GrMzzYKN5U4O1yBlKCbIANcoQ/i7sEflardSc.jpg?size=46x46&quality=96&sign=cd4da684380e4a02bb149e881bc648fe&type=album"
           }
@@ -85,7 +88,10 @@ export const TimeOfApocalypses = () => {
           color={white}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={80}
+          desktopWidth={25}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-2/impg/8Fz0Io3p5lDIs9YnBCSyrnEHcTFFvPfKe9NqyA/MqqOC6uT1YU.jpg?size=307x340&quality=96&sign=71b9cf68ac201eaeac044176d54a5724&type=album"
           }
@@ -110,18 +116,22 @@ export const TimeOfApocalypses = () => {
           color={white}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={80}
+          desktopWidth={25}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-73/impg/346zJXTzYfBlG9bzMVttGysmVgRtNd3cxFVzhQ/AYmjAF243Bg.jpg?size=326x512&quality=96&sign=33263e0fccca4ad289a3f0aa524b4377&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
-        <img
+        <SharedComponents.ResponsiveImg
+          mobileWidth={80}
+          desktopWidth={25}
+          alt={""}
           src={
             "https://sun9-42.userapi.com/sun9-69/impg/9izwvRxP8M5f-diCDVOnkMGXp_X-U6-PqxFqEw/N4VDFEQO3IQ.jpg?size=313x473&quality=96&sign=c1d7a8d2af78eb7126780d8c7d5d49ac&type=album"
           }
-          width={"30%"}
         />
         <SharedComponents.VerticalBox height={24} />
         <a
