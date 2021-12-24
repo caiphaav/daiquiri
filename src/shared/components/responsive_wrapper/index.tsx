@@ -6,6 +6,7 @@ export const ResponsiveWrapper = styled.div(
   display: flex;
   flex-direction: column; 
   padding: 0 16px;
+  position: relative;
    
   ${theme.breakpoints.up(theme.breakpoints.iphoneX)} {
     padding: 0 32px;

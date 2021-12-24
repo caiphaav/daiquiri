@@ -1,82 +1,104 @@
 import { SharedComponents, Theme } from "@shared";
+import styled from "styled-components";
+
+export const ResponsiveWrapper = styled.div(
+  ({ theme }) => `
+  
+  display: flex;
+  flex-direction: column; 
+  padding: 0 16px;
+  position: absolute;
+  top: 128px;
+   
+  ${theme.breakpoints.up(theme.breakpoints.iphoneX)} {
+    padding: 0 32px;
+  }    
+  
+  ${theme.breakpoints.up(theme.breakpoints.pixel)} {
+    padding: 0 32px;
+  }    
+  
+  ${theme.breakpoints.up(theme.breakpoints.ipad)} {
+     padding: 0 32px;
+  }    
+  
+  ${theme.breakpoints.up(theme.breakpoints.ipadPro)} {
+     padding: 0 32px;
+  }  
+  
+  ${theme.breakpoints.up(theme.breakpoints.medium)} {
+     padding: 0 32px;
+  }     
+`
+);
+
+export const ResponsiveInner = styled.div(
+  ({ theme }) => `
+  
+  width: 100%;
+  height: 512px;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: rgba(255, 255, 255, 0.44) 0px 25px 50px -12px;
+  padding: 32px;
+   
+   
+  ${theme.breakpoints.up(theme.breakpoints.ipad)} {
+     width: 80%;
+  }    
+  
+  ${theme.breakpoints.up(theme.breakpoints.ipadPro)} {
+     width: 60%;
+  }     
+  
+  ${theme.breakpoints.up(theme.breakpoints.medium)} {
+     width: 50%;
+  } 
+  ${theme.breakpoints.up(theme.breakpoints.medium)} {
+     width: 40%;
+  }   
+   
+`
+);
 
 export const About = () => {
   const {
-    palette: { pink },
+    palette: { white },
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Screen>
       <SharedComponents.NavBar />
       <img
-        src={"6.jpeg"}
+        src={
+          "https://c.wallhere.com/photos/ba/f0/2560x1600_px_fantasy_Art_Heroes_video_games_warcraft-665230.jpg!d"
+        }
         alt={"about"}
         width={"100%"}
         style={{
           objectFit: "cover",
-          objectPosition: "50% 50%",
           minHeight: "100vh",
           opacity: 0.5,
         }}
       />
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          zIndex: 1000,
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <SharedComponents.Column
-          flex={0}
-          width={"fit-content"}
-          alignItems={"center"}
-          justifyContent={"center"}
-        >
-          <SharedComponents.Text text={"ДРОП"} type={"h1"} color={pink} />
-          <SharedComponents.VerticalBox height={8} />
-          <SharedComponents.Text text={"х20"} type={"h2"} color={"white"} />
-        </SharedComponents.Column>
-        <SharedComponents.HorizontalBox width={64} />
-        <SharedComponents.Column
-          flex={0}
-          width={"fit-content"}
-          alignItems={"center"}
-          justifyContent={"center"}
-        >
-          <SharedComponents.Text text={"ОПЫТ"} type={"h1"} color={pink} />
-          <SharedComponents.VerticalBox height={8} />
-          <SharedComponents.Text text={"х40"} type={"h2"} color={"white"} />
-        </SharedComponents.Column>
-        <SharedComponents.HorizontalBox width={64} />
-        <SharedComponents.Column
-          flex={0}
-          width={"fit-content"}
-          alignItems={"center"}
-          justifyContent={"center"}
-        >
-          <SharedComponents.Text text={"СЕРЕБРО"} type={"h1"} color={pink} />
-          <SharedComponents.VerticalBox height={8} />
-          <SharedComponents.Text text={"х1"} type={"h2"} color={"white"} />
-        </SharedComponents.Column>
-        <SharedComponents.HorizontalBox width={64} />
-        <SharedComponents.Column
-          flex={0}
-          width={"fit-content"}
-          alignItems={"center"}
-          justifyContent={"center"}
-        >
-          <SharedComponents.Text text={"КВЕСТ"} type={"h1"} color={pink} />
-          <SharedComponents.VerticalBox height={8} />
-          <SharedComponents.Text text={"х5"} type={"h2"} color={"white"} />
-        </SharedComponents.Column>
-      </div>
-      <SharedComponents.Footer />
+      <ResponsiveWrapper>
+        <ResponsiveInner>
+          <SharedComponents.Text
+            text={
+              "Daiquiri Games - это команда опытных специалистов, которая предлагает своему комьюнити качественный сервис для комфортной и бесконечно захватывающей игры только на наших серверах.\n"
+            }
+            type={"md"}
+            color={white}
+          />
+          <SharedComponents.VerticalBox height={24} />
+          <SharedComponents.Text
+            text={"На сервере Daiquiri установлены следующие рейтинги:"}
+            type={"md"}
+            color={white}
+          />
+          <SharedComponents.MarkedList
+            data={["Дроп - х20", "Опыт - х40", "Серебро - х1", "Квест - x5"]}
+          />
+        </ResponsiveInner>
+      </ResponsiveWrapper>
     </SharedComponents.Screen>
   );
 };
