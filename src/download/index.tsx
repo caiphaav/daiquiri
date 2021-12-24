@@ -1,41 +1,21 @@
 import { SharedComponents, Theme } from "@shared";
-import styled from "styled-components";
 
-export const ResponsiveWrapper = styled.div(
-  ({ theme }) => `
-  
-  position: absolute;
-  width: 100%; 
-  height: 100vh; 
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-`
-);
+import * as DownloadComponents from "./components";
 
 export const Download = () => {
   const {
     palette: { white },
   } = Theme.useStyledTheme();
+
   return (
     <SharedComponents.Screen>
       <SharedComponents.NavBar />
-      <img
+      <DownloadComponents.Img
         src={"download.jpg"}
         alt={"about"}
         width={"100%"}
-        style={{
-          objectFit: "cover",
-          minHeight: "100vh",
-          opacity: 0.5,
-        }}
       />
-      <ResponsiveWrapper>
+      <DownloadComponents.ResponsiveInner>
         <SharedComponents.Text
           text={"Скачать клиент по ссылке:"}
           type={"h1"}
@@ -50,7 +30,11 @@ export const Download = () => {
         >
           <SharedComponents.Button title={"GOOGLE DRIVE"} />
         </a>
-      </ResponsiveWrapper>
+        <SharedComponents.VerticalBox height={24} />
+        <a href={"https://disk.yandex.ru/d/eRjzHS_3z-qacA"} target={"_blank"}>
+          <SharedComponents.Button title={"YANDEX DISK"} />
+        </a>
+      </DownloadComponents.ResponsiveInner>
     </SharedComponents.Screen>
   );
 };
