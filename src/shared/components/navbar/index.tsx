@@ -113,7 +113,7 @@ export const NavBar = () => {
         <RoutesWrapper>
           <p onClick={() => navigate("/")}>Главная</p>
           <p onClick={() => navigate("/about")}>О сервере</p>
-          <p onClick={() => navigate("/")}>Скачать</p>
+          <p onClick={() => navigate("/download")}>Скачать</p>
         </RoutesWrapper>
         <IconWrapper>
           <a

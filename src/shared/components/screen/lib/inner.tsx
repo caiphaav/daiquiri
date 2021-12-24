@@ -5,8 +5,8 @@ export const Inner = styled.div(
   
   width: 1400px; 
   min-height: 100vh;
-  background: ${theme.palette.primary};
-   
+  background: ${theme.palette.primary}; 
+  
   ${theme.breakpoints.down(theme.breakpoints.medium)} {
     width: 100%; 
   }    
