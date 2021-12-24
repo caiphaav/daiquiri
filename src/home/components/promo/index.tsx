@@ -15,7 +15,7 @@ export const Promo = () => {
 
   return (
     <SharedComponents.Column height={"800px"}>
-      <PromoLib.Img src={"6.jpeg"} />
+      <PromoLib.Img src={"6.webp"} />
       <PromoLib.Wrapper>
         <SharedComponents.Column justifyContent={"center"}>
           <SharedComponents.ResponsiveWrapper>

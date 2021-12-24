@@ -15,7 +15,7 @@ export const Download = () => {
       />
       <SharedComponents.NavBar />
       <DownloadComponents.Img
-        src={"download.jpg"}
+        src={"https://i.imgur.com/4FTLavO.jpg"}
         alt={"about"}
         width={"100%"}
       />
