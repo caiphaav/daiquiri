@@ -10,7 +10,7 @@ export const PATCH_03_12_2021 = () => {
     <SharedComponents.Screen>
       <SharedComponents.NavBar />
       <SharedComponents.Meta
-        content={"https://daiquiri.top/events/new-year"}
+        content={"https://daiquiri.top/events/patch-03-12-2021"}
         title={"Daiquiri - Патч 03.12.2021"}
       />
       <SharedComponents.Header
