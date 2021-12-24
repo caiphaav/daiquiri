@@ -9,6 +9,10 @@ export const Download = () => {
 
   return (
     <SharedComponents.Screen>
+      <SharedComponents.Meta
+        content={"https://daiquiri.top/download"}
+        title={"Daiquiri - Скачать"}
+      />
       <SharedComponents.NavBar />
       <DownloadComponents.Img
         src={"download.jpg"}

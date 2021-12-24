@@ -9,6 +9,10 @@ export const SealedCave = () => {
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Screen>
+      <SharedComponents.Meta
+        content={"https://daiquiri.top/events/sealed-cave"}
+        title={"Daiquiri - Боссы в Запечатанных пещерах"}
+      />
       <SharedComponents.NavBar />
       <SharedComponents.Header
         thumbnail={

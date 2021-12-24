@@ -2,6 +2,16 @@ import { Types } from "@shared";
 
 export const LAST_NEWS: Array<Types.INews> = [
   {
+    id: "-1",
+    route: "events/patch-22-12-2021",
+    title: "Патч 24.12.2021",
+    date: "24 декабря 2021",
+    description:
+      'Добавлены руны в бижутерию. Изменения связанные с подземельями Юпитера и Баальбека. Скорректирован размер монстра: "Древнее семя зла". Вернули прежний прайс кольцам бури и уклона. Исправлены руны в ожерелья...',
+    thumbnail:
+      "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
+  },
+  {
     id: "0",
     route: "events/patch-22-12-2021",
     title: "Патч 22.12.2021",
@@ -40,6 +50,6 @@ export const LAST_NEWS: Array<Types.INews> = [
     description:
       "Новые уникальные перевоплощения и разнообразие игрового времени ждёт тебя!",
     thumbnail:
-      "https://sun9-78.userapi.com/sun9-28/impg/AnWVKXfBEMzKrt_An5HjX7XLl6cbq0IDzJ7HZA/5q5C2bjat0I.jpg?size=483x360&quality=96&sign=3e27e4b3527e18f345108dca4ef96617&type=album",
+      "https://media.discordapp.net/attachments/898707711846387712/923584536980357250/a363e7fdb2318c53.png",
   },
 ];

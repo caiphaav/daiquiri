@@ -8,6 +8,10 @@ export const PATCH_22_12_2021 = () => {
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Screen>
+      <SharedComponents.Meta
+        content={"https://daiquiri.top/events/patch-22-12-2021"}
+        title={"Daiquiri - Патч 22.12.2021"}
+      />
       <SharedComponents.NavBar />
       <SharedComponents.Header
         thumbnail={

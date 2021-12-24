@@ -5,6 +5,10 @@ import * as Components from "./components";
 export const Home = () => {
   return (
     <SharedComponents.Screen>
+      <SharedComponents.Meta
+        content={"https://daiquiri.top"}
+        title={"Daiquiri - Главная"}
+      />
       <SharedComponents.NavBar />
       <Components.Promo />
       <Components.Carousel />

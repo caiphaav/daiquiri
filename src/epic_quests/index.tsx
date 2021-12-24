@@ -14,6 +14,10 @@ export const EpicQuests = () => {
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Screen>
+      <SharedComponents.Meta
+        content={"https://daiquiri.top/events/epic-quests"}
+        title={"Daiquiri - Эпические квесты"}
+      />
       <SharedComponents.NavBar />
       <SharedComponents.Header
         thumbnail={

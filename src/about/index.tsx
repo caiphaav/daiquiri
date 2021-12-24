@@ -10,6 +10,10 @@ export const About = () => {
 
   return (
     <SharedComponents.Screen>
+      <SharedComponents.Meta
+        content={"https://daiquiri.top/about"}
+        title={"Daiquiri - О сервере"}
+      />
       <SharedComponents.NavBar />
       <img
         src={

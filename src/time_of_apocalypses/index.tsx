@@ -8,6 +8,10 @@ export const TimeOfApocalypses = () => {
   } = Theme.useStyledTheme();
   return (
     <SharedComponents.Screen>
+      <SharedComponents.Meta
+        content={"https://daiquiri.top/events/time-of-apocalypses"}
+        title={"Daiquiri - Время Апокалипсиса"}
+      />
       <SharedComponents.NavBar />
       <SharedComponents.Header
         thumbnail={

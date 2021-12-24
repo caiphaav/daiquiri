@@ -9,6 +9,10 @@ export const NewYear = () => {
   return (
     <SharedComponents.Screen>
       <SharedComponents.NavBar />
+      <SharedComponents.Meta
+        content={"https://daiquiri.top/events/new-year"}
+        title={"Daiquiri - Новогоднее безумие"}
+      />
       <SharedComponents.Header
         thumbnail={
           "https://media.discordapp.net/attachments/898707711846387712/923553084947431504/22-12-2021_010926.jpg"

@@ -9,6 +9,10 @@ export const PATCH_03_12_2021 = () => {
   return (
     <SharedComponents.Screen>
       <SharedComponents.NavBar />
+      <SharedComponents.Meta
+        content={"https://daiquiri.top/events/new-year"}
+        title={"Daiquiri - Патч 03.12.2021"}
+      />
       <SharedComponents.Header
         thumbnail={
           "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album"

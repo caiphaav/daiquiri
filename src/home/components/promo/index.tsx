@@ -1,11 +1,18 @@
 import * as PromoLib from "./lib";
 
 import { SharedComponents, Theme } from "@shared";
+import { useNavigate } from "react-router-dom";
+import { useCallback } from "react";
 
 export const Promo = () => {
   const {
     palette: { white },
   } = Theme.useStyledTheme();
+
+  const navigation = useNavigate();
+
+  const goToAboutPage = useCallback(() => navigation("about"), [navigation]);
+
   return (
     <SharedComponents.Column height={"800px"}>
       <PromoLib.Img src={"6.jpeg"} />
@@ -30,7 +37,10 @@ export const Promo = () => {
               color={white}
             />
             <SharedComponents.VerticalBox height={48} />
-            <SharedComponents.Button title={"Подробнее"} />
+            <SharedComponents.Button
+              title={"Подробнее"}
+              onClick={goToAboutPage}
+            />
           </SharedComponents.ResponsiveWrapper>
         </SharedComponents.Column>
       </PromoLib.Wrapper>
