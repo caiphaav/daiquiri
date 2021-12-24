@@ -1,147 +1,59 @@
-import styled from "styled-components";
+import { NavigateFunction, useNavigate } from "react-router-dom";
+import { Turn as Hamburger } from "hamburger-react";
 
-import { useNavigate } from "react-router-dom";
+import { INavBarItem } from "../../types";
 
-import { IconMenu } from "./icons";
+import {
+  NAVBAR_DESKTOP_LINKS,
+  NAVBAR_DESKTOP_REFS,
+  NAVBAR_MOBILE_ROUTES,
+} from "./constants";
+import * as NavBarLib from "./lib";
+import { useCallback, useState } from "react";
 
-const Wrapper = styled.div`
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 64px;
-  z-index: 10000;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #09090b;
-`;
+const renderDesktopRef = (navigate: NavigateFunction) => (route: INavBarItem) =>
+  (
+    <p key={route.name} onClick={() => navigate(route.to)}>
+      {route.name}
+    </p>
+  );
 
-const IconWrapper = styled.div(
-  ({ theme }) => `
-
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 64px;
-  cursor: pointer;
-  .form {
-    visibility: hidden;
-  }
-
-  &:hover {
-    .form {
-      padding: 16px;
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
-  ${theme.breakpoints.down(theme.breakpoints.ipadPro)} {
-    display: none;
-  }
-`
+const renderDesktopLink = (route: INavBarItem) => (
+  <a key={route.name} href={route.to} target={"_blank"} rel={"noreferrer"}>
+    <p>{route.name}</p>
+  </a>
 );
 
-const Inner = styled.div`
-  width: 100%;
-  max-width: 1400px;
-  height: 100%;
-  padding: 0 96px;
-  display: flex;
-  align-items: center;
-
-  p {
-    transition: 0.15s ease-in;
-    color: white;
-    margin-right: 48px;
-
-    &:hover {
-      cursor: pointer;
-      color: ${({ theme }) => theme.palette.pink};
-    }
-  }
-`;
-
-const RoutesWrapper = styled.div(
-  ({ theme }) => `
-
-  
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 1;
-   
-  ${theme.breakpoints.down(theme.breakpoints.ipadPro)} {
-    display: none;
-  }     
-`
-);
-
-const MenuWrapper = styled.div(
-  ({ theme }) => `
-
-  
-  display: none;
-   
-  ${theme.breakpoints.down(theme.breakpoints.ipadPro)} { 
-    position: absolute;
-    right: 32px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    width: 48px;
-    height: 48px; 
-    border-radius: 8px;
-    transition: .2s linear;
-    
-    &:hover {
-      cursor: pointer; 
-      border: 1px solid white;
-    }
-  }     
-`
+const renderMobileRoutes = (route: INavBarItem) => (
+  <NavBarLib.MobileItem item={route} key={route.name} />
 );
 
 export const NavBar = () => {
   const navigate = useNavigate();
+
+  const [hasBurgerMenu, setBurgerMenu] = useState<boolean>(false);
+
+  const onMenuClick = useCallback(
+    () => setBurgerMenu((prev) => !prev),
+    [setBurgerMenu]
+  );
+
   return (
-    <Wrapper>
-      <Inner>
-        <RoutesWrapper>
-          <p onClick={() => navigate("/")}>Главная</p>
-          <p onClick={() => navigate("/about")}>О сервере</p>
-          <p onClick={() => navigate("/download")}>Скачать</p>
-        </RoutesWrapper>
-        <IconWrapper>
-          <a
-            href={"https://daiquiri.nonrp.nl/lk/donate.php"}
-            target={"_blank"}
-            rel={"noreferrer"}
-          >
-            <p>Пополнить</p>
-          </a>
-          <a
-            href={"https://daiquiri.nonrp.nl/lk/register.php"}
-            target={"_blank"}
-            rel={"noreferrer"}
-          >
-            <p>Регистрация</p>
-          </a>
-          <a
-            href={"https://daiquiri.nonrp.nl/lk/login.php"}
-            target={"_blank"}
-            rel={"noreferrer"}
-          >
-            <p>Вход</p>
-          </a>
-        </IconWrapper>
-        <MenuWrapper>
-          <IconMenu fill={"white"} width={24} height={24} />
-        </MenuWrapper>
-      </Inner>
-    </Wrapper>
+    <NavBarLib.Wrapper>
+      <NavBarLib.Inner>
+        <NavBarLib.DesktopWrapper>
+          {NAVBAR_DESKTOP_REFS.map(renderDesktopRef(navigate))}
+        </NavBarLib.DesktopWrapper>
+        <NavBarLib.DesktopWrapper>
+          {NAVBAR_DESKTOP_LINKS.map(renderDesktopLink)}
+        </NavBarLib.DesktopWrapper>
+        <NavBarLib.MenuWrapper onClick={onMenuClick}>
+          <Hamburger size={24} color={"white"} toggled={hasBurgerMenu} />
+        </NavBarLib.MenuWrapper>
+      </NavBarLib.Inner>
+      <NavBarLib.MobileWrapper isActive={hasBurgerMenu}>
+        {NAVBAR_MOBILE_ROUTES.map(renderMobileRoutes)}
+      </NavBarLib.MobileWrapper>
+    </NavBarLib.Wrapper>
   );
 };

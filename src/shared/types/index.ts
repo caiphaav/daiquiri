@@ -1,5 +1,6 @@
 import { Types } from "shared";
 
+// TO-DO: provide backend endpoints
 export type IEndpoint = "login";
 
 export interface INews {
@@ -21,4 +22,12 @@ export interface ISealedCaveBoss {
   description: string;
   data: Array<Types.IR2Item>;
   src: string;
+}
+
+export type NavBarItemType = "link" | "ref";
+
+export interface INavBarItem {
+  name: string;
+  to: string;
+  type: NavBarItemType;
 }
