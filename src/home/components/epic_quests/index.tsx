@@ -11,7 +11,11 @@ export const EpicQuests = () => {
   } = Theme.useStyledTheme();
   return (
     <EQLib.Wrapper>
-      <EQLib.Img src={"13.jpeg"} />
+      <EQLib.Img
+        src={
+          "https://r2wiki.ru/upload/pictures/2018/12/12/b8f45753e64562b9b967f28abbf80b8c.JPG"
+        }
+      />
       <div
         style={{
           zIndex: 1000,

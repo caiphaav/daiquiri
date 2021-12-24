@@ -1,11 +1,8 @@
-import { SharedComponents, Theme } from "../shared";
+import { SharedComponents } from "@shared";
 
 import * as Components from "./components";
 
 export const Home = () => {
-  const {
-    palette: {},
-  } = Theme.useStyledTheme();
   return (
     <SharedComponents.Screen>
       <SharedComponents.NavBar />
