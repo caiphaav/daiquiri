@@ -2,6 +2,16 @@ import { Types } from "@shared";
 
 export const LAST_NEWS: Array<Types.INews> = [
   {
+    id: "events/patch-12-01-2022",
+    route: "events/patch-12-01-2022",
+    title: "Патч 12.01.2022",
+    date: "02 января 2022",
+    description:
+      'Включено отображение HP боссам. Добавлена новая печать для Эпического Кольца Телепортации - "Печать Алтаря Рарки". Убрана возможность устанавливать налоги на крепостях...',
+    thumbnail:
+      "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
+  },
+  {
     id: "events/patch-24-12-2021",
     route: "events/patch-24-12-2021",
     title: "Patch Notes Part 1",
