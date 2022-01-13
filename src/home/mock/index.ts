@@ -2,9 +2,9 @@ import { Types } from "@shared";
 
 export const LAST_NEWS: Array<Types.INews> = [
   {
-    id: "0",
+    id: "events/patch-24-12-2021",
     route: "events/patch-24-12-2021",
-    title: "Патч 24.12.2021",
+    title: "Patch Notes Part 1",
     date: "24 декабря 2021",
     description:
       'Добавлены руны в бижутерию. Изменения связанные с подземельями Юпитера и Баальбека. Скорректирован размер монстра: "Древнее семя зла". Вернули прежний прайс кольцам бури и уклона. Исправлены руны в ожерелья...',
@@ -12,18 +12,28 @@ export const LAST_NEWS: Array<Types.INews> = [
       "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
   },
   {
-    id: "1",
+    id: "events/patch-22-12-2021",
     route: "events/patch-22-12-2021",
+    title: "Ивент «Новогоднее безумие»",
+    date: "22 декабря 2021",
+    description:
+      'На сервер установлено игровое событие: "Новогоднее безумие". Добавлены новые игровые предметы: В игру добавлен 4 грейд бижутерии солнца. В игру добавлен 2 грейд Кольца Ифрита...',
+    thumbnail:
+      "https://media.discordapp.net/attachments/898707711846387712/923553084947431504/22-12-2021_010926.jpg",
+  },
+  {
+    id: "events/patch-24-12-2021",
+    route: "events/patch-24-12-2021",
     title: "Патч 22.12.2021",
     date: "22 декабря 2021",
     description:
-      'На сервер установлено игровое событие: "Новогоднее безумие" .Добавлены новые игровые предметы: В игру добавлен 4 грейд бижутерии солнца. В игру добавлен 2 грейд Кольца Ифрита...',
+      'Добавлены руны в бижутерию. Изменения связанные с подземельями Юпитера и Баальбека. Скорректирован размер монстра: "Древнее семя зла". Вернули прежний прайс кольцам бури и уклона. Исправлены руны в ожерелья...',
     thumbnail:
       "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
   },
   {
-    id: "2",
-    route: "/events/sealed-cave",
+    id: "events/sealed-cave",
+    route: "events/sealed-cave",
     title: "Боссы в запечатанных пещерах",
     date: "4 декабря 2021",
     description:
@@ -32,7 +42,7 @@ export const LAST_NEWS: Array<Types.INews> = [
       "https://sun9-78.userapi.com/sun9-51/impg/tADxoH4UN3XgbMj-7CoemKx4VIafRFtrAU0gaA/BliS0ENGst0.jpg?size=758x542&quality=96&sign=eccc51078597b0bdd261cb553fca07c2&type=album",
   },
   {
-    id: "3",
+    id: "events/patch-03-12-2021",
     route: "events/patch-03-12-2021",
     title: "Патч 03.12.2021",
     date: "3 декабря 2021",
@@ -43,7 +53,7 @@ export const LAST_NEWS: Array<Types.INews> = [
       "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
   },
   {
-    id: "4",
+    id: "events/time-of-apocalypses",
     route: "events/time-of-apocalypses",
     title: "Ивент «Время Апокалипсиса»",
     date: "30 ноября 2021",
