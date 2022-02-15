@@ -1,13 +1,10 @@
-import { useNavigate } from "react-router-dom";
-
 import { SharedComponents, Theme } from "@shared";
 
-import * as EQLib from "./lib";
+import * as LocalComponents from "./lib";
 
 export const NewYearPromo = () => {
-  const navigate = useNavigate();
   const {
-    palette: { white },
+    palette: { white, pink },
   } = Theme.useStyledTheme();
   return (
     <>
@@ -20,43 +17,50 @@ export const NewYearPromo = () => {
         />
         <SharedComponents.VerticalBox height={64} />
       </SharedComponents.ResponsiveWrapper>
-      <EQLib.Wrapper>
-        <EQLib.Img
+      <LocalComponents.Wrapper>
+        <LocalComponents.Img
           src={
-            "https://sun9-58.userapi.com/sun9-56/impg/ueiK87si7s-c5CR8NyOKzVWMys4rNiNRJkg6SA/hb_bs2tJY70.jpg?size=1359x1000&quality=96&sign=5edf8b5ba73ce3fa09a67e531863e229&type=album"
+            "https://sun9-67.userapi.com/impg/3yJ8MjagF1w9M7s6yY2qJ4LXZKI5-59yt5gkjA/_T_wMdjAsMQ.jpg?size=1919x1079&quality=95&sign=0490c628273c9c79339f2a9fe033e347&type=album"
           }
           alt={""}
         />
-        <div
-          style={{
-            zIndex: 1000,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <LocalComponents.Inner>
           <SharedComponents.Text
-            text={"Patch Notes Part 2"}
+            text={'Обновление "New Era Part 1" by Pennywise'}
             type={"h1"}
             color={white}
             textAlign={"center"}
           />
           <SharedComponents.VerticalBox height={16} />
           <SharedComponents.Text
-            text={"Узнай подробности первым!"}
+            text={"Уникальный мир полный волшебства"}
             type={"h2"}
             color={white}
           />
           <SharedComponents.VerticalBox height={32} />
-          <SharedComponents.Button
-            title={"Подробнее"}
-            onClick={() =>
-              navigate("/events/patch-31-12-2021", { replace: true })
-            }
+          <a
+            href="https://forum.daiquiri.top/d/2-obnovlenie-new-era-part-1"
+            rel={"noreferrer"}
+          >
+            <SharedComponents.Button title={"Подробнее"} />
+          </a>
+        </LocalComponents.Inner>
+        <div
+          style={{
+            position: "absolute",
+            top: 16,
+            right: 16,
+            background: pink,
+            padding: 8,
+          }}
+        >
+          <SharedComponents.Text
+            color={white}
+            type={"md"}
+            text="Предстоящее событие"
           />
         </div>
-      </EQLib.Wrapper>
+      </LocalComponents.Wrapper>
     </>
   );
 };

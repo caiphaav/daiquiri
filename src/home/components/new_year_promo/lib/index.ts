@@ -1,2 +1,4 @@
-export { Img } from "./eq.img";
-export { Wrapper } from "./eq.wrapper";
+export { Img } from "./img";
+export { Wrapper } from "./wrapper";
+export { Inner } from "./inner";
+export { Label } from "./label";

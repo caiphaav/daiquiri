@@ -22,6 +22,11 @@ export const NAVBAR_DESKTOP_REFS: Array<INavBarItem> = [
 
 export const NAVBAR_DESKTOP_LINKS: Array<INavBarItem> = [
   {
+    name: "Форум",
+    to: "https://forum.daiquiri.top/",
+    type: "link",
+  },
+  {
     name: "Пополнить",
     to: "https://daiquiri.nonrp.nl/lk/donate.php",
     type: "link",

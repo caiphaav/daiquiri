@@ -11,6 +11,8 @@ import { PATCH_22_12_2021 } from "./patch_22_12_2021";
 import { PATCH_24_12_2021 } from "./patch_24_12_2021";
 import { PATCH_31_12_2021 } from "./patch_31_12_2021";
 import { PATCH_12_01_2022 } from "./patch_12_01_2022";
+import { PATCH_17_01_2022 } from "./patch_17_01_2022";
+import { PATCH_25_01_2022 } from "./patch_25_01_2022";
 import { TimeOfApocalypses } from "./time_of_apocalypses";
 import { NewYear } from "./new_year";
 import { About } from "./about";
@@ -39,6 +41,14 @@ function App() {
           <Route
             path={"events/patch-12-01-2022"}
             element={<PATCH_12_01_2022 />}
+          />
+          <Route
+            path={"events/patch-17-01-2022"}
+            element={<PATCH_17_01_2022 />}
+          />
+          <Route
+            path={"events/patch-25-01-2022"}
+            element={<PATCH_25_01_2022 />}
           />
           <Route
             path={"events/patch-22-12-2021"}

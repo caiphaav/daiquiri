@@ -2,14 +2,44 @@ import { Types } from "@shared";
 
 export const LAST_NEWS: Array<Types.INews> = [
   {
+    id: "events/patch-25-01-2022",
+    route: "events/patch-25-01-2022",
+    title: "Патч 25.01.2022",
+    date: "25 января 2022",
+    description:
+      "Усилены показатели всех боссов. Исправленны временные проблемы у предметов Фруктовый леденец и Манговая карамель. Стихийная эссенция доступна к продаже через торговую лавку и аукцион...",
+    thumbnail:
+      "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
+  },
+  {
+    id: "events/patch-17-01-2022",
+    route: "events/patch-17-01-2022",
+    title: "Патч 17.01.2022",
+    date: "17 января 2022",
+    description:
+      "Изменен состав изумрудных ключей, В игру добавлено +4 усиление плаща смотрителя и плаща невидимости. В игру добавлен 6 и 7 уровень сфер героизма, охотника, мудреца. В игру добавлено Усиленное кольцо Ифрита, 3 грейд кольца Ифрита",
+    thumbnail:
+      "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
+  },
+  {
     id: "events/patch-12-01-2022",
     route: "events/patch-12-01-2022",
     title: "Патч 12.01.2022",
-    date: "02 января 2022",
+    date: "12 января 2022",
     description:
       'Включено отображение HP боссам. Добавлена новая печать для Эпического Кольца Телепортации - "Печать Алтаря Рарки". Убрана возможность устанавливать налоги на крепостях...',
     thumbnail:
       "https://sun9-78.userapi.com/sun9-34/impg/OstUa3mnqNjPT-h9AG4V9nQ-ELkVEtC1_PdfLQ/xsp6juj5W3k.jpg?size=960x540&quality=96&sign=232a45869f774b4d2dd61bf3e4498f39&type=album",
+  },
+  {
+    id: "events/patch-31-12-2021",
+    route: "events/patch-31-12-2021",
+    title: "Patch Notes Part 2",
+    date: "31 декабря 2021",
+    description:
+      "Сокровищницы Грихентеля. Переработаны Запечатанные пещеры. Ребаланс Особого древа Гильдии и многое другое",
+    thumbnail:
+      "https://sun9-58.userapi.com/sun9-56/impg/ueiK87si7s-c5CR8NyOKzVWMys4rNiNRJkg6SA/hb_bs2tJY70.jpg?size=1359x1000&quality=96&sign=5edf8b5ba73ce3fa09a67e531863e229&type=album",
   },
   {
     id: "events/patch-24-12-2021",
